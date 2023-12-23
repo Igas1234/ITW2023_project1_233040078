@@ -19,6 +19,7 @@ nav {
     color: aliceblue;
     height: 50px;
     align-items: center;
+
 }
 
 nav ul {
@@ -87,7 +88,7 @@ nav ul li a:hover {
     transform: scale(0);
 }
 
-
+/*home*/
 .container {
     background-color: aqua;
     width: 100%;
@@ -105,6 +106,10 @@ nav ul li a:hover {
     border: 5px solid black;
 }
 
+.perkenalan {
+    z-index: 2;
+}
+
 .perkenalan h1 {
     margin-top: 100px;
     text-align: center;
@@ -117,7 +122,6 @@ nav ul li a:hover {
     color: black;
     margin-top: 10px;
     margin-bottom: 20px;
-
 }
 
 .icon {
@@ -146,73 +150,98 @@ nav ul li a:hover {
     color: orange;
 }
 
-
-.about {
-    height: 100vh;
-    color: black;
-}
-
 .blob {
     position: absolute;
-    top: 360px;
 }
 
+/*about*/
 .about {
-    display: flex;
-    background-color: #FF5500;
-    height: 50vh;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    position: relative;
+    background-color: #ff5500;
     width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.about h2 {
-    text-align: center;
+.marker {
+    position: absolute;
+    width: 900px;
+    left: -50px;
+    height: 900px;
 }
 
 .about .biodata {
+    background-color: aqua;
+    line-height: 30px;
+    width: 500px;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.skill {
-    display: flex;
-    justify-content: space-around;
-    background-color: cornflowerblue;
-    position: relative;
-    height: 100vh;
-    flex-wrap: wrap;
-    width: 100%;
-    padding-top: 40px;
-}
-
-.pemrograman {
+    border-radius: 20%;
     border: 5px solid black;
-    width: 500px;
-    height: 50vh;
-    padding: 20px;
+    box-shadow: 5px 5px 2px black, -5px -5px 2px black;
+    z-index: 2;
 }
 
-.pemrograman h2 {
-    text-align: center;
-    font-size: 40px;
+.about .gambar img {
+    border: 5px solid black;
+    border-radius: 20%;
+    overflow: hidden;
+    background-size: cover;
 }
 
-.bahasa {
-    margin-top: 40px;
+
+/*skill*/
+.blob1 {
+    position: absolute;
+}
+
+/*skills*/
+
+.skills {
+    height: 150vh;
+    background-image: linear-gradient(blue, #ffff00);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-size: 40px;
+    position: relative;
+}
+
+.skills-content {
+    margin-top: 350px;
 }
 
 .bahasa h2 {
+    margin-bottom: 40px;
+}
+
+.skills .bahasa {
+    font-size: 40px;
+    padding-right: 10px;
     text-align: center;
-    font-size: 50px;
+}
+
+.bahasa i {
+    margin: 10px;
+}
+
+.skills-content {
+    /* margin-right: 400p; */
+    height: 400px;
+    width: 500px;
+    border-radius: 20px;
+    border: 5px solid black;
+}
+
+.pemrograman {
+    font-size: 20px;
+    margin: 40px;
+}
+
+.pemrograman p {
+    margin: 30px;
 }
 
 .details {
@@ -237,14 +266,6 @@ nav ul li a:hover {
     border: 1px solid #FF5500;
 }
 
-.bar div {
-    position: relative;
-    width: 0;
-    height: 5px;
-    background-color: white;
-    border: 1px solid #FF5500;
-}
-
 #js-bar {
     width: 10%;
 }
@@ -255,27 +276,44 @@ nav ul li a:hover {
 
 #html-bar {
     width: 70%;
+}
+
+
+/*softskills*/
+.soft-content {
+    margin-top: 350px;
+}
+
+.brain h2 {
+    margin-bottom: 40px;
+}
+
+.soft-content .brain {
+    font-size: 40px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.brain i {
+    margin: 10px;
+}
+
+.soft-content {
+    /* margin-right: 400p; */
+    height: 400px;
+    width: 500px;
+    border-radius: 20px;
+    border: 5px solid black;
 }
 
 .softskill {
-    border: 5px solid black;
-    width: 500px;
-    height: 50vh;
-    padding: 20px;
+    font-size: 20px;
+    margin: 40px;
 }
 
-.softskill h2 {
-    text-align: center;
-    font-size: 40px;
+.softskill p {
+    margin: 30px;
 }
-
-/* .soft {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 10px;
-} */
 
 .details {
     width: 100%;
@@ -299,38 +337,177 @@ nav ul li a:hover {
     border: 1px solid #FF5500;
 }
 
-.bar div {
-    position: relative;
-    width: 0;
-    height: 5px;
-    background-color: white;
-    border: 1px solid #FF5500;
-}
-
-#js-bar {
+#ps-bar {
     width: 10%;
 }
 
-#css-bar {
-    width: 30%;
+#analis-bar {
+    width: 5%;
 }
 
-#html-bar {
-    width: 70%;
+#kom-bar {
+    width: 5%;
 }
+
+
+.portfolio {
+    height: 200vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(77, 77, 134), #6b6868);
+    position: relative;
+    padding-top: 300px;
+}
+
+.portfolio h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    align-content: center;
+
+}
+
+.blob2 {
+    position: absolute;
+    top: 0;
+}
+
+.card {
+    width: 40%;
+    height: 450px;
+    border: 5px solid black;
+    border-radius: 10%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.card .sc img {
+    width: 100%;
+    height: auto;
+    border-bottom: 5px solid black;
+}
+
+.text {
+    margin: 20px 20px 0 20px;
+    text-align: center;
+}
+
+.blob3 {
+    position: absolute;
+    top: 0;
+}
+
+.contact {
+    background-image: linear-gradient(rgb(111, 111, 213), white);
+    height: 150vh;
+    width: 100%;
+    position: relative;
+    padding-top: 250px;
+}
+
+.contact h1 {
+    text-align: center;
+}
+
+.c-contact {
+    display: flex;
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    border-radius: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.c-contact .kiri {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(white, blue);
+    border: 3px solid black;
+    border-radius: 50px 0 0 50px;
+    padding: 10px;
+}
+
+.kiri h1 {
+    margin-bottom: 10px;
+}
+
+.kiri p {
+    margin-bottom: 10px;
+}
+
+.c-contact .kontak {
+    display: flex;
+    flex-direction: column;
+}
+
+.kontak a {
+    color: black;
+    margin-bottom: 5px;
+}
+
+.c-contact .kanan {
+    background-image: linear-gradient(lightskyblue, rgb(252, 221, 164));
+    border: 5px solid black;
+    border-radius: 0 50px 50px 0;
+    padding: 10px;
+    width: 50%;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    background-color: transparent;
+}
+
+.input .group {
+    /* margin-right: 100px; */
+    width: 300px;
+}
+
+.contact .kanan {
+    padding: 30px;
+}
+
+.contact .kiri {
+    padding: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    background-color: transparent;
+}
+
+.contact button {
+    margin-top: 10px;
+    height: 40px;
+    padding: 5px;
+    width: 100px;
+}
+
+
+
+
 
 
 
 /*responsive*/
-
-
-/*ukuran tablet*/
-@media screen and (max-width: 768px) {
-    nav ul {
-        width: 50%;
-    }
-}
-
 /* ukuran mobile*/
 @media screen and (max-width: 576px) {
     .menu-toggle {
