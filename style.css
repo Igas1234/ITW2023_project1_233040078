@@ -3,6 +3,7 @@
     margin: 0;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -10,6 +11,7 @@ body {
     overflow-x: hidden;
 }
 
+/* navbar */
 /* navbar */
 nav {
     display: flex;
@@ -19,7 +21,6 @@ nav {
     color: aliceblue;
     height: 50px;
     align-items: center;
-
 }
 
 nav ul {
@@ -104,6 +105,7 @@ nav ul li a:hover {
     height: 300px;
     border-radius: 50%;
     border: 5px solid black;
+    position: relative;
 }
 
 .perkenalan {
@@ -501,21 +503,59 @@ textarea {
     width: 100px;
 }
 
+footer {
+    height: 30vh;
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+}
 
+.footer {
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
 
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+}
 
+.footer-list ul li a {
+    color: white;
+}
 
+.footer-contact a {
+    color: white;
+}
 
+.footer-contact a i {
+    color: white;
+}
+
+.footer .sosmed ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+.sosmed ul li a {
+    color: white;
+}
+
+.footer-text p {
+    text-align: center;
+}
 
 /*responsive*/
 /* ukuran mobile*/
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 320px) {
     .menu-toggle {
         display: flex;
     }
 
 
-    /* nav ul {
+    nav ul {
         position: absolute;
         right: 0;
         top: 0;
@@ -527,7 +567,60 @@ textarea {
         z-index: -1;
         transform: translateX(100%);
         transition: all 1s;
-    } */
+    }
+
+    .container {
+        height: 150vh;
+    }
+
+    .perkenalan {
+        position: relative;
+        top: -100px;
+    }
+
+    .perkenalan p {
+        text-align: center;
+    }
+
+    .foto img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 5px solid black;
+        position: relative;
+        top: -10px;
+    }
+
+    .blob {
+        position: absolute;
+        top: 727px;
+    }
+
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .marker {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        top: -150px;
+    }
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        height: 200vh;
+    }
+
+    .skills-content {
+        margin-top: 100px;
+    }
+
+    .soft-content {
+        margin-top: 0px;
+    }
 }
 
 nav ul.slide {
