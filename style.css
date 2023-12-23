@@ -549,7 +549,7 @@ footer {
 
 /*responsive*/
 /* ukuran mobile*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
     .menu-toggle {
         display: flex;
     }
@@ -593,7 +593,7 @@ footer {
 
     .blob {
         position: absolute;
-        top: 727px;
+        top: 780px;
     }
 
     .about {
@@ -620,6 +620,10 @@ footer {
 
     .soft-content {
         margin-top: 0px;
+    }
+
+    .footer-list {
+        display: none;
     }
 }
 
