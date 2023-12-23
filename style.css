@@ -57,6 +57,7 @@ nav ul li a:hover {
     left: -6px;
     top: -4px;
     cursor: pointer;
+    z-index: 99999;
 }
 
 .menu-toggle span {
@@ -556,6 +557,7 @@ footer {
 
 
     nav ul {
+        display: none;
         position: absolute;
         right: 0;
         top: 0;
@@ -564,9 +566,10 @@ footer {
         justify-content: space-evenly;
         flex-direction: column;
         background-color: lightskyblue;
-        z-index: -1;
+        z-index: 99;
         transform: translateX(100%);
         transition: all 1s;
+        overflow: hidden;
     }
 
     .container {
@@ -593,12 +596,21 @@ footer {
 
     .blob {
         position: absolute;
-        top: 780px;
+        top: 727px;
+    }
+
+    .about .marker {
+        position: absolute;
+        left: -100px;
     }
 
     .about {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .about .biodata {
+        width: 250px;
     }
 
     .marker {
@@ -616,6 +628,21 @@ footer {
 
     .skills-content {
         margin-top: 100px;
+        width: 250px;
+    }
+
+    .soft-content {
+        width: 250px;
+        overflow: hidden;
+    }
+
+    input {
+        width: 100px;
+    }
+
+    .portfolio {
+        padding-top: 70px;
+        height: 220vh;
     }
 
     .soft-content {
@@ -624,6 +651,12 @@ footer {
 
     .footer-list {
         display: none;
+    }
+
+    .c-contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 }
 
