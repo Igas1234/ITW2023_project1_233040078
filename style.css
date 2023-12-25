@@ -67,6 +67,7 @@ nav ul li a:hover {
     background-color: aliceblue;
     border-radius: 3px;
     transition: all 0.5s;
+    z-index: 9999999999;
 }
 
 /*hambuger menu animation*/
@@ -92,7 +93,7 @@ nav ul li a:hover {
 
 /*home*/
 .container {
-    background-color: aqua;
+    background-image: linear-gradient(rgb(113, 112, 112), rgb(66, 40, 40));
     width: 100%;
     height: 100vh;
     display: flex;
@@ -107,6 +108,7 @@ nav ul li a:hover {
     border-radius: 50%;
     border: 5px solid black;
     position: relative;
+    background-color: white;
 }
 
 .perkenalan {
@@ -122,9 +124,10 @@ nav ul li a:hover {
 }
 
 .perkenalan p {
-    color: black;
+    color: white;
     margin-top: 10px;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 1px black;
 }
 
 .icon {
@@ -273,6 +276,7 @@ nav ul li a:hover {
     width: 10%;
 }
 
+
 #css-bar {
     width: 30%;
 }
@@ -417,6 +421,7 @@ nav ul li a:hover {
     text-align: center;
 }
 
+
 .c-contact {
     display: flex;
     width: 80%;
@@ -435,6 +440,7 @@ nav ul li a:hover {
     border: 3px solid black;
     border-radius: 50px 0 0 50px;
     padding: 10px;
+    right: -100px;
 }
 
 .kiri h1 {
@@ -557,7 +563,6 @@ footer {
 
 
     nav ul {
-        display: none;
         position: absolute;
         right: 0;
         top: 0;
@@ -569,7 +574,6 @@ footer {
         z-index: 99;
         transform: translateX(100%);
         transition: all 1s;
-        overflow: hidden;
     }
 
     .container {
@@ -645,18 +649,44 @@ footer {
         height: 220vh;
     }
 
+    .card {
+        overflow: scroll;
+    }
+
     .soft-content {
         margin-top: 0px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-contact {
+        gap: 2px;
+    }
+
+    .footer-text p {
+        margin-top: -20px;
     }
 
     .footer-list {
         display: none;
     }
 
+    .sosmed h1 {
+        display: none;
+    }
+
+    .sosmed ul li a {
+        display: flex;
+        /* flex-direction: column; */
+    }
+
     .c-contact {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 10px;
     }
 }
 
