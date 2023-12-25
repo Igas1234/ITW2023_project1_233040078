@@ -285,7 +285,6 @@ nav ul li a:hover {
     width: 70%;
 }
 
-
 /*softskills*/
 .soft-content {
     margin-top: 350px;
@@ -598,14 +597,21 @@ footer {
         top: -10px;
     }
 
+    .gambar {
+        z-index: 9999999999999;
+    }
+
     .blob {
         position: absolute;
-        top: 727px;
+        top: 780px;
     }
 
     .about .marker {
         position: absolute;
         left: -100px;
+        top: -250px;
+        width: 750px;
+        height: 750px;
     }
 
     .about {
@@ -650,7 +656,7 @@ footer {
     }
 
     .card {
-        overflow: scroll;
+        overflow-y: scroll;
     }
 
     .soft-content {
